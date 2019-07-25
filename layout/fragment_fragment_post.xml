@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_post_base"
+    android:layout_height="match_parent"
+    tools:context=".bottomnavFragments.FragmentAddPost">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fragment_post_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorwhite"
+        android:elevation="10dp"
+        app:title="Request Lecture"
+        app:titleTextColor="@color/logodarkblue" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorwhite"
+        android:orientation="vertical"
+        android:layout_below="@id/fragment_post_toolbar"
+        android:weightSum="8">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/SubjectTextinputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"
+            android:textColorHint="@color/logodarkblue">
+
+            <Spinner
+                android:id="@+id/addpost_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/CodeTextinputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"
+            android:textColorHint="@color/logodarkpink">
+
+            <EditText
+                android:id="@+id/addpost_codetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:hint="Code" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/DescriptionTextinputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"
+            android:textColorHint="@color/logodarkblue">
+
+            <EditText
+                android:id="@+id/descriptiontext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:maxLines="4"
+                android:hint="Describe what you want to learn" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/AmountTextinputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"
+            android:textColorHint="@color/logodarkpink">
+
+            <EditText
+                android:id="@+id/addpost_Budgetamounttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Amount you can pay" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/addpost_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttonstyleithgradient"
+            android:textColor="@color/colorwhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="1"
+            android:text="SELECT DATE" />
+
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/buttonstyleithgradient_reverse"
+            android:textColor="@color/colorwhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="SELECT TIME" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttonstyleithgradient"
+            android:textColor="@color/colorwhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="1"
+            android:text="submit" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

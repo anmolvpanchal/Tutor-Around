@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/perticular_post_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey"
+    tools:context=".activity.PerticularPostDetails">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/colorwhite"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constrain_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/logodarkblue"
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    tools:ignore="MissingConstraints">
+
+
+                    <TextView
+                        android:id="@+id/perticular_post_subjectname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/logodarkblue"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Subjectname"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/perticular_post_subjectcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="2dp"
+                        android:text="code"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/perticular_post_subjectname"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/perticular_post_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:maxLines="5"
+                    android:text="Description text"
+                    android:textColor="@color/colorblack"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/perticular_post_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="19dp"
+                    android:text="Date"
+                    android:textColor="@color/logodarkblue"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_description" />
+
+                <TextView
+                    android:id="@+id/perticular_post_actualdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="19dp"
+                    android:text="0000/00/00"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_date" />
+
+                <TextView
+                    android:id="@+id/perticular_post_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="19dp"
+                    android:text="Time"
+                    android:textColor="@color/logodarkblue"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_actualdate" />
+
+                <TextView
+                    android:id="@+id/perticular_post_actualtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="19dp"
+                    android:text="00:00"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_time" />
+
+                <TextView
+                    android:id="@+id/perticular_post_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="197dp"
+                    android:layout_marginTop="19dp"
+                    android:text="Duration"
+                    android:textColor="@color/logodarkpink"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/perticular_post_date"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_description" />
+
+                <TextView
+                    android:id="@+id/perticular_post_actualduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="101dp"
+                    android:layout_marginTop="19dp"
+                    android:text="00:00 h"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toEndOf="@+id/perticular_post_actualdate"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_duration" />
+
+                <TextView
+                    android:id="@+id/perticular_post_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="196dp"
+                    android:layout_marginTop="19dp"
+                    android:text="Cost"
+                    android:textColor="@color/logodarkpink"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/perticular_post_time"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_actualduration" />
+
+                <TextView
+                    android:id="@+id/perticular_post_actualcost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="16dp"
+                    android:text=" Rs"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toEndOf="@+id/perticular_post_actualtime"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_cost" />
+
+                <TextView
+                    android:id="@+id/perticular_post_tutorsname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/buttonstyleithgradient_reverse"
+                    android:padding="3dp"
+                    android:text="Persons Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_actualtime" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/perticular_post_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/perticular_post_tutorsname" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/tutor_list_root_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/logodarkblue"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tutor_list_tutor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="tutors name"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_weight="0.4"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tutor_list_tutor_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="ratings : "
+                    android:layout_weight="1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+
+                    android:layout_weight="1"
+                    android:id="@+id/tutor_list_tutor_star"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:src="@drawable/star_image"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tutor_list_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tutor_list_root_layout"
+                android:background="@color/logolightblue"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tutor_list_amount_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:text="Amount"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tutor_list_actual_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="00"
+                    android:gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tutor_list_amount"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tutor_list_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonstyleithgradient"
+                    android:text="accept"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorwhite" />
+
+                <Button
+                    android:id="@+id/tutor_list_reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:background="@drawable/buttonstyleithgradient_reverse"
+                    android:text="reject"
+                    android:textColor="@color/colorwhite" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

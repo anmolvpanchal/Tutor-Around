@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_dialog_Textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:padding="5dp"
+        android:textColorHint="@color/logodarkblue">
+
+        <EditText
+            android:id="@+id/edtCounterOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:hint="Counter offer amount"
+            android:inputType="number" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/layout_dialog_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:padding="4dp"
+        android:background="@drawable/buttonstyleithgradient"
+        android:textColor="@color/colorwhite"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/layout_dialog_Textinputlayout"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

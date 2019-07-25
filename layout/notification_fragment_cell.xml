@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorwhite">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/notification_cell_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:id="@+id/notification_cell_relative_layout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/notification_cell_linear_layout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/logodarkblue"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/notification_cell_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Type "
+                    android:textAlignment="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/notification_cell_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/notification_cell_linear_layout0"
+                android:background="@color/LightGrey"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/notification_cell_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notification_cell_view"
+                android:background="@color/colorwhite"
+                android:padding="10dp"
+                android:text="description"
+                android:textColor="@color/colorblack"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
