@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceGenerator {
 
-    static String BASEURL = "http://paloilapp.com/vhtutorsaround/Service/Service_v8/";
+    static String BASEURL = "";
     private static Retrofit.Builder builder =
             new Retrofit.Builder()
                     .baseUrl(BASEURL)
